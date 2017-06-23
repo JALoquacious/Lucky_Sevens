@@ -1,0 +1,96 @@
+/*---------- MEDIA QUERIES ----------*/
+@media (max-width: 960px) {
+    table {
+        font-size: .75em;
+    }
+}
+/*-----------------------------------*/
+
+
+/*---------- TAG SELECTORS ----------*/
+body {
+    background-color: #608970;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 25%;
+    min-width: 200px;
+}
+
+input[type=button] {
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 1);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 1);
+    margin: 1em;
+    padding: 2em;
+    -webkit-transition: all 0.10s ease-in-out;
+    -moz-transition:    all 0.10s ease-in-out;
+    -ms-transition:     all 0.10s ease-in-out;
+    -o-transition:      all 0.10s ease-in-out;
+    width: 150px;
+}
+
+input[type=button]:hover {
+    cursor: pointer;
+}
+
+input[type=button]:active {
+    -webkit-box-shadow:  1px 1px 1px -1px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:     1px 1px 1px -1px rgba(50, 50, 50, 0.75);
+    box-shadow:          1px 1px 1px -1px rgba(50, 50, 50, 0.75);
+    transform: translateY(5px);
+}
+
+input[type=text] {
+    border: 1px solid white;
+    outline: none;
+    padding: .25em;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition:    all 0.30s ease-in-out;
+    -ms-transition:     all 0.30s ease-in-out;
+    -o-transition:      all 0.30s ease-in-out;
+}
+
+input[type=text]:focus {
+    border: 1px solid rgb(225, 147, 80);
+    -webkit-box-shadow: 0 0 1em rgb(226, 81, 81);
+    -moz-box-shadow:    0 0 1em rgb(226, 81, 81)
+    box-shadow:         0 0 1em rgb(226, 81, 81)
+    padding: .25em;
+}
+
+table {
+    color: black;
+    margin: auto;
+    max-width: 90%;
+}
+/*-----------------------------------*/
+
+
+/*---------- ID SELECTORS -----------*/
+#results {
+    background-color: #484848;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 1);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 1);
+    margin: 2em auto;
+    max-width: 50%;
+    min-width: 250px;
+    padding: 1em;
+}
+
+#buttons {
+    display: table;
+    margin: auto;
+}
+/*-----------------------------------*/
