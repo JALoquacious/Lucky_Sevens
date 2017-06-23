@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucky Sevens</title>
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="w3-container">
+        <h1>Lucky Sevens</h1>
+        <img src="dice.png" alt="dice" class="w3-margin w3-hover-sepia">
+        <form>
+            <span>Starting Bet:</span>
+            <input type="text" name="bet_input" id="bet_input" class="w3-margin" placeholder="$0.00">
+            <div id="buttons">
+                <input type="button" value="Play!" class="w3-hover-sepia w3-validate" id="play">
+                <input type="button" value="Reset" class="w3-hover-sepia w3-validate" id="reset">
+            </div>
+        </form>
+        <div id="results">
+            <h2>Results</h2>
+            <table class="w3-table-all w3-hoverable">
+                <tr>
+                    <th>Description</th>
+                    <th>Current</th>
+                    <th>Top</th>
+                </tr>
+                <tr>
+                    <td>Starting Bet</td>
+                    <td id="bet_amt"></td>
+                    <td class="w3-text-red" id="bet_amt_top"></td>
+                </tr>
+                <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td id="num_rolls"></td>
+                    <td class="w3-text-red" id="num_rolls_top"></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won</td>
+                    <td id="max_won"></td>
+                    <td class="w3-text-red" id="max_won_top"></td>
+                </tr>
+                <tr>
+                    <td>Roll Count At Highest Amount Won</td>
+                    <td id="max_rolls"></td>
+                    <td class="w3-text-red" id="max_rolls_top"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
+    </script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
